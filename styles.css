@@ -1,0 +1,44 @@
+/* Masonry Layout project
+stylesheet */
+
+body {
+    background-image: linear-gradient(rgb(240, 238, 238), rgb(133, 132, 132));
+}
+
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div#gallery {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+div.item {
+    margin-bottom: 17px;
+}
+
+/* Media query for tablet or smaller-sized screens */
+@media only screen and (max-width: 800px) {
+    div#gallery {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    div.item {
+        margin-bottom: 5px;
+    }
+}
+
